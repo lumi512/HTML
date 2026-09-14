@@ -3,7 +3,6 @@ body { font-family: Arial; }
 h1 { text-transform: uppercase; }
 h2 { font-style: italic; }
 h3 { text-decoration: overline; }
-address { text-align: center; }
 
 p
 {
@@ -13,7 +12,9 @@ p
 
 hr
 {
-    height: 5px;
     width: 50%;
+    height: 5px;
     background: #007;
 }
+
+address { text-align: center; }
