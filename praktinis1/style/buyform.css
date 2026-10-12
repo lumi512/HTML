@@ -1,0 +1,79 @@
+form
+{
+    --form-input-bg-color: #f3f5f7;
+    --form-input-bg-hover-color: #e9ebed;
+    --form-input-border-color: #404547;
+    --form-input-border-hover-color: #075f9a;
+    --form-input-text-color: #242424;
+
+    --form-font-weight: 400;
+    --form-spacing: 0.5em;
+
+    margin-inline: 0.25em;
+}
+
+.form-radio
+{
+    font-weight: var(--form-font-weight);
+    margin-block: var(--form-spacing);
+}
+
+.form-radio input:hover
+{
+    cursor: pointer;
+}
+
+.form-option
+{
+    --form-option-width: 12em;
+    --form-option-height: 1.5em;
+
+    font-weight: var(--form-font-weight);
+    margin-block: var(--form-spacing);
+}
+
+.form-option select
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 100;
+
+    background: var(--form-input-bg-color);
+    color: var(--form-input-text-color);
+
+    border: 1px solid var(--form-input-border-color);
+    border-radius: 2px;
+
+    width: var(--form-option-width);
+    height: var(--form-option-height);
+}
+
+.form-option select:hover
+{
+    background: var(--form-input-bg-hover-color);
+    border-color: var(--form-input-border-hover-color);
+    cursor: pointer;
+}
+
+.form-option select option
+{
+    font-family: inherit;
+    font-size: 0.85em;
+    font-weight: inherit;
+
+    background: inherit;
+    color: inherit;
+
+    border: inherit;
+    border-radius: inherit;
+}
+
+.form-checkbox
+{
+    margin-block: var(--form-spacing);
+}
+
+.form-checkbox input:hover
+{
+    cursor: pointer;
+}

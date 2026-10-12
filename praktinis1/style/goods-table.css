@@ -1,0 +1,45 @@
+.goods-table
+{
+    --goods-table-bg-color: #AEACBE;
+
+    background: var(--goods-table-bg-color);
+}
+
+.goods-item
+{
+    --goods-size: 10em;
+    --goods-item-bg-color: #CDCDCD;
+
+    background: var(--goods-item-bg-color);
+
+    width: var(--goods-size);
+    height: var(--goods-size);
+}
+
+.goods-item img
+{
+    --goods-image-base-opacity: 80%;
+    --goods-image-target-opacity: 100%;
+
+    opacity: var(--goods-image-base-opacity);
+
+    width: var(--goods-size);
+    height: var(--goods-size);
+}
+
+.goods-item:hover img
+{
+    opacity: var(--goods-image-target-opacity);
+}
+
+.goods-item p
+{
+    font-weight: 500;
+    font-size: 1.15em;
+
+    text-align: center;
+    margin-inline: 1.5em;
+
+    cursor: default;
+    user-select: none;
+}

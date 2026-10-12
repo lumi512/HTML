@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" type="text/css" href="style/main.css">
+        <link rel="stylesheet" type="text/css" href="style/buyform.css">
         <title>Pirkti - Tikroviška Parduotuvė.</title>
     </head>
 
@@ -23,58 +24,63 @@
             Pirkti Prekė.
         </header>
 
-        <main>
-            <p>
-                Jus nusprendėte pirkti prekę.<br>
-                Prašome išpildyti šią anketą, kad nupirkti Jūsų prekę.
-            </p>
-
-            <form action="pirkimas.html">
-                <fieldset>
-                    <legend>Asmens duomenys</legend>
-
-                    <p>Vardas: <input type="text" name="firstname" required="required"/></p>
-                    <p>Pavardė: <input type="text" name="lastname" required="required"/></p>
-                    <p>Gimimo data: <input type="date" required="required"/></p>
-
-                    <p>El. paštas: <input type="email" required="required"></p>
-                    <p>Telefono nr.: <input type="text" required="required"/></p>
-                    <p>Adresas: <input type="text" required="required"/></p>
-                </fieldset>
-
+        <div id="content">
+            <main>
                 <p>
-                    Pristatymo būdas:<br>
-                    <input type="radio" name="delivery" value="adreso"/>Adreso siuntimas<br>
-                    <input type="radio" name="delivery" value="paštomatas"/>Paštomatas
+                    Jus nusprendėte pirkti prekę.<br>
+                    Prašome išpildyti šią anketą, kad nupirkti Jūsų prekę.
                 </p>
 
-                <select>
-                    <option value="Kompiuteris">Kompiuteris</option>
-                    <option value="Telefonas">Telefonas</option>
-                    <option value="Šuo">Šuo</option>
-                    <option value="Katė">Katė</option>
-                    <option value="Namas">Namas</option>
-                    <option value="Bananas">Bananas</option>
-                    <option value="Apelsinas">Apelsinas</option>
-                    <option value="Obuolys">Obuolys</option>
-                    <option value="Siena">Siena</option>
-                    <option value="Žolė">Žolė</option>
-                    <option value="Medis">Medis</option>
-                    <option value="Automobilis">Automobilis</option>
-                </select>
+                <form action="pirkimas.html">
+                    <fieldset>
+                        <legend>Asmens duomenys</legend>
 
-                <p>
-                    <input type="checkbox" value="getpromotions" checked="checked"/>
-                    Gauti pranešimus apie naujoves mūsų parduotuvėje
-                </p>
+                        <p>Vardas: <input type="text" name="firstname" required="required"/></p>
+                        <p>Pavardė: <input type="text" name="lastname" required="required"/></p>
+                        <p>Gimimo data: <input type="date" required="required"/></p>
 
-                <input type="submit" name="buy" value="Pirkti"/>
-            </form>
-        </main>
+                        <p>El. paštas: <input type="email" required="required"></p>
+                        <p>Telefono nr.: <input type="text" required="required"/></p>
+                        <p>Adresas: <input type="text" required="required"/></p>
+                    </fieldset>
 
-        <aside>
-            Sužinokite daugiau apie šios dienos naujiena!
-        </aside>
+                    <div class="form-radio">
+                        Pristatymo būdas:<br>
+                        <input type="radio" name="delivery" value="adreso"/>Adreso siuntimas<br>
+                        <input type="radio" name="delivery" value="paštomatas"/>Paštomatas
+                    </div>
+
+                    <div class="form-option">
+                        Prekė:
+                        <select>
+                            <option value="Kompiuteris">Kompiuteris</option>
+                            <option value="Telefonas">Telefonas</option>
+                            <option value="Šuo">Šuo</option>
+                            <option value="Katė">Katė</option>
+                            <option value="Namas">Namas</option>
+                            <option value="Bananas">Bananas</option>
+                            <option value="Apelsinas">Apelsinas</option>
+                            <option value="Obuolys">Obuolys</option>
+                            <option value="Siena">Siena</option>
+                            <option value="Žolė">Žolė</option>
+                            <option value="Medis">Medis</option>
+                            <option value="Automobilis">Automobilis</option>
+                        </select>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" value="getpromotions" checked="checked"/>
+                        Gauti pranešimus apie naujoves mūsų parduotuvėje
+                    </div>
+
+                    <input class="big-button" type="submit" name="buy" value="Pirkti"/>
+                </form>
+            </main>
+
+            <aside>
+                <div id="aside-header">Sužinokite daugiau apie šios dienos naujiena!</div>
+            </aside>
+        </div>
 
         <footer>
             <p>&copy; 2026 Lukas Mikalauskas</p>

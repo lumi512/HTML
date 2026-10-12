@@ -1,0 +1,19 @@
+header
+{
+    --header-bg-color: #404040;
+    --header-font-color: #DEDEDE;
+
+    background: var(--header-bg-color);
+    color: var(--header-font-color);
+
+    border: 2px solid var(--header-bg-color);
+    border-radius: 6px;
+
+    padding: 1.25em;
+    margin-block: 0.35em;
+    margin-inline: 0.25em;
+
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: 400;
+}

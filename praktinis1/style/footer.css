@@ -12,8 +12,9 @@ footer
 
 footer p
 {
-    text-align: center;
+    text-align: right;
 
     font-size: 1.15em;
     padding-block: 0.15em;
+    padding-right: 1.5em;
 }

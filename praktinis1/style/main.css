@@ -1,5 +1,7 @@
 @import url(menu.css);
+@import url(header.css);
 @import url(footer.css);
+@import url(big-button.css);
 
 body
 {
@@ -13,4 +15,54 @@ body
     padding-inline: 2em;
 
     background: var(--bg-color);
+}
+
+#content
+{
+    padding-inline: 0.75em;
+    padding-block: 0.1em;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main
+{
+    margin-right: auto;
+}
+
+aside
+{
+    --aside-bg-color: #c9c0c0;
+    --aside-bg-hover-color: #cec5c5;
+    --aside-font-color: #4A404A;
+    --aside-font-hover-color: #202020;
+
+    --aside-width: 20em;
+    --aside-height: 35em;
+
+    background: var(--aside-bg-color);
+    color: var(--aside-font-color);
+
+    width: var(--aside-width);
+    height: var(--aside-height);
+
+    border: 2px solid var(--aside-bg-color);
+    border-radius: 6px;
+
+    margin-block: 1em;
+    padding: 1em;
+}
+
+aside:hover
+{
+    background: var(--aside-bg-hover-color);
+    border-color: var(--aside-bg-hover-color);
+    color: var(--aside-font-hover-color);
+}
+
+#aside-header
+{
+    font-size: 1.5em;
+    font-weight: 400;
 }
