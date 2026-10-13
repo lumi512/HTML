@@ -7,15 +7,48 @@ form
     --form-input-text-color: #242424;
 
     --form-font-weight: 400;
+    --form-input-font-weight: 100;
     --form-spacing: 0.5em;
 
     margin-inline: 0.25em;
+}
+
+fieldset
+{
+    font-weight: var(--form-font-weight);
+}
+
+fieldset input
+{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: var(--form-input-font-weight);
+
+    background: var(--form-input-bg-color);
+    color: var(--form-input-text-color);
+
+    border: 1px solid var(--form-input-border-color);
+    border-radius: 2px;
+
+    width: var(--form-option-width);
+    height: var(--form-option-height);
+}
+
+fieldset input:hover
+{
+    background: var(--form-input-bg-hover-color);
+    border-color: var(--form-input-border-hover-color);
 }
 
 .form-radio
 {
     font-weight: var(--form-font-weight);
     margin-block: var(--form-spacing);
+}
+
+.form-radio-input
+{
+    font-weight: var(--form-input-font-weight);
 }
 
 .form-radio input:hover
@@ -36,7 +69,7 @@ form
 {
     font-family: inherit;
     font-size: inherit;
-    font-weight: 100;
+    font-weight: var(--form-input-font-weight);
 
     background: var(--form-input-bg-color);
     color: var(--form-input-text-color);

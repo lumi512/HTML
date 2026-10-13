@@ -9,7 +9,7 @@
 
     font-family: inherit;
     font-weight: 400;
-    font-size: 1.25em;
+    font-size: 1.15em;
 
     text-decoration: none;
     text-align: center;
@@ -29,6 +29,13 @@
 
     display: flex;
     justify-content: center;
+}
+
+.big-button-wide
+{
+    --big-button-wide-width: 12.5em;
+
+    width: var(--big-button-wide-width);
 }
 
 .big-button:hover
