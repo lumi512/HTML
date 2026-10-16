@@ -9,7 +9,7 @@ body
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.1em;
 
     margin: 2em;
     padding-inline: 2em;
@@ -23,7 +23,7 @@ body
     padding-block: 0.1em;
 
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
 }
 
 main
@@ -46,10 +46,13 @@ aside
 
     width: var(--aside-width);
     height: var(--aside-height);
+    min-width: var(--aside-width);
+    min-height: var(--aside-height);
 
     border: 2px solid var(--aside-bg-color);
     border-radius: 6px;
 
+    margin-left: 1em;
     margin-block: 1em;
     padding: 1em;
 }
@@ -65,4 +68,9 @@ aside:hover
 {
     font-size: 1.5em;
     font-weight: 400;
+}
+
+#aside-content
+{
+    font-size: 1.15em;
 }

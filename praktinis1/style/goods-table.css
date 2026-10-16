@@ -7,7 +7,7 @@
 
 .goods-item
 {
-    --goods-size: 10em;
+    --goods-size: 8em;
     --goods-item-bg-color: #CDCDCD;
 
     background: var(--goods-item-bg-color);
@@ -35,10 +35,11 @@
 .goods-item p
 {
     font-weight: 500;
-    font-size: 1.15em;
+    font-size: 0.85em;
 
     text-align: center;
     margin-inline: 1.5em;
+    margin-block: 0.8em;
 
     cursor: default;
     user-select: none;

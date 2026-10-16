@@ -91,7 +91,7 @@ fieldset input:hover
 .form-option select option
 {
     font-family: inherit;
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: inherit;
 
     background: inherit;
@@ -109,4 +109,9 @@ fieldset input:hover
 .form-checkbox input:hover
 {
     cursor: pointer;
+}
+
+textarea
+{
+    resize: none;
 }

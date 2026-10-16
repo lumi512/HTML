@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" type="text/css" href="style/main.css">
-        <link rel="stylesheet" type="text/css" href="style/buyform.css">
+        <link rel="stylesheet" type="text/css" href="style/form.css">
         <title>Pirkti - Tikroviška Parduotuvė.</title>
     </head>
 
@@ -16,69 +16,91 @@
                 <li><a href="pagrindinis.html">Pagrindinis</a></li>
                 <li><a href="prekes.html">Prekės</a></li>
                 <li><a href="pirkti.html">Pirkti</a></li>
+                <li><a href="kontaktai.html">Kontaktai</a></li>
                 <li><a href="apiemus.html">Apie</a></li>
             </ul>
         </nav>
 
         <header>
-            Pirkti Prekė.
+            Pirkti Prekę.
         </header>
 
         <div id="content">
             <main>
                 <p>
                     Jus nusprendėte pirkti prekę.<br>
-                    Prašome išpildyti šią anketą, kad nupirkti Jūsų prekę.
+                    Prašome išpildyti šią anketą, kad galėtumete nusipirkti savo prekę.
                 </p>
 
                 <form action="pirkimas.html">
                     <fieldset>
                         <legend>Asmens duomenys</legend>
 
-                        <p>Vardas: <input type="text" name="firstname" required="required"/></p>
-                        <p>Pavardė: <input type="text" name="lastname" required="required"/></p>
-                        <p>Gimimo data: <input type="date" required="required"/></p>
+                        <p>Vardas<b>*</b>: <input type="text" name="firstname" required="required"/></p>
+                        <p>Pavardė<b>*</b>: <input type="text" name="lastname" required="required"/></p>
+                        <p>Gimimo data<b>*</b>: <input type="date" required="required"/></p>
 
-                        <p>El. paštas: <input type="email" required="required"></p>
-                        <p>Telefono nr.: <input type="text" required="required"/></p>
-                        <p>Adresas: <input type="text" required="required"/></p>
+                        <p>El. paštas<b>*</b>: <input type="email" required="required"></p>
+                        <p>Telefono nr.<b>*</b>: <input type="text" required="required"/></p>
+                        <p>Adresas<b>*</b>: <input type="text" required="required"/></p>
                     </fieldset>
 
+                    <br>
                     <div class="form-radio">
-                        Pristatymo būdas:<br>
-                        <div class="form-radio-input"><input type="radio" name="delivery" value="adreso"/>Adreso siuntimas<br></div>
-                        <div class="form-radio-input"><input type="radio" name="delivery" value="paštomatas"/>Paštomatas</div>
+                        Pristatymo būdas<b>*</b>:<br>
+                        <div class="form-radio-input"><input type="radio" required="required" name="delivery" value="adreso"/>Adreso siuntimas<br></div>
+                        <div class="form-radio-input"><input type="radio" required="required" name="delivery" value="paštomatas"/>Paštomatas</div>
                     </div>
 
                     <div class="form-option">
                         Prekė:
                         <select>
-                            <option value="Kompiuteris">Kompiuteris</option>
-                            <option value="Telefonas">Telefonas</option>
-                            <option value="Šuo">Šuo</option>
-                            <option value="Katė">Katė</option>
-                            <option value="Namas">Namas</option>
-                            <option value="Bananas">Bananas</option>
-                            <option value="Apelsinas">Apelsinas</option>
-                            <option value="Obuolys">Obuolys</option>
-                            <option value="Siena">Siena</option>
-                            <option value="Žolė">Žolė</option>
+                            <option value="peanuts">Riešutai "Alesto"</option>
+                            <option value="banana">Bananai "Tango"</option>
+                            <option value="juice">Obuolių Sultys</option>
+                            <option value="biscuits">Sausainiai "Sondey"</option>
+
+                            <option value="croissantoreo">Kruasanas "7 Days Oreo"</option>
+                            <option value="potatochips">Bulvių traškučiai</option>
+                            <option value="sourcream">Grietinė "Pilos"</option>
+                            <option value="cookies">Sausainiai "Tastino"</option>
+
+                            <!--
+                            <option value="cup">Puodukas</option>
+                            <option value="mouse">Pelė</option>
                             <option value="Medis">Medis</option>
-                            <option value="Automobilis">Automobilis</option>
+                            <option value="sourcream">Grietinė</option>
+                            -->
                         </select>
                     </div>
 
+                    <br>
                     <div class="form-checkbox">
                         <input type="checkbox" value="getpromotions" checked="checked"/>
                         Gauti pranešimus apie naujoves mūsų parduotuvėje
                     </div>
 
+                    <p>
+                        Paspaudus mygtuką "Pirkti", gausite el. laišką, kuriame galėsite tęsti ir patvirtinti užsakymą.<br>
+                        <i><b>*</b> - Privaloma</i>
+                    </p>
                     <input class="big-button" type="submit" name="buy" value="Pirkti"/>
                 </form>
             </main>
 
             <aside>
                 <div id="aside-header">Sužinokite daugiau apie šios dienos naujiena!</div>
+                <div id="aside-content">
+                    <p>
+                        Mes ką tik atidarėme mūsų visiškai naują svetainę!<br>
+                        <br>
+                        Prašome pranešti mums savo nuomonę apie mūsų svetainę ir pasakykite, ar yra kokių nors patobulinimų, kuriuos galėtume atlikti. Mielai išgirsime jūsų nuomonę!<br>
+                        <br>
+                        Jei norite peržiūrėti mūsų katalogą, spustelėkite <a href="prekes.html">čia</a>.<br>
+                        <br>
+                        Jei norite sužinoti daugiau apie mūsų verslą, galite peržiūrėti mūsų puslapį <a href="apiemus.html">"Apie Mūsų Parduotuvė"</a>.
+                    </p>
+                </div>
             </aside>
         </div>
 
