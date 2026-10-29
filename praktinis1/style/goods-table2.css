@@ -1,0 +1,56 @@
+.goods-table
+{
+    --goods-table-bg-color: #DCDCFB;
+    --goods-table-row-color: #EBEBEA;
+    --goods-table-row-hover-color: #EDEDF4;
+
+    background: var(--goods-table-bg-color);
+    width: 100%;
+}
+
+.goods-table tr
+{
+    background: var(--goods-table-row-color);
+}
+
+.goods-item-img
+{
+    --goods-item-width: 100%;
+
+    max-width: var(--goods-item-width);
+    max-height: auto;
+}
+
+.goods-item-img img
+{
+    width: var(--goods-item-width);
+    height: auto;
+}
+
+.goods-item-desc
+{
+    text-align: left;
+    vertical-align: top;
+
+    padding-inline: 2em;
+    width: 70%;
+
+    cursor: default;
+    user-select: none;
+}
+
+.goods-item-desc-name
+{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.goods-item-desc-price
+{
+    font-size: 1.25em;
+}
+
+.goods-item-desc:hover
+{
+    background: var(--goods-table-row-hover-color);
+}

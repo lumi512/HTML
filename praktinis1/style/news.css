@@ -1,0 +1,32 @@
+.news-section
+{
+    --news-bg-color: #ECECFB;
+    --news-border-color: #DBDBEA;
+
+    background: var(--news-bg-color);
+    min-height: 6em;
+
+    margin-block-end: 1em;
+}
+
+.news-content
+{
+    border: 2px solid var(--news-border-color);
+
+    padding-inline: 2em;
+    padding-block: 1em;
+
+    vertical-align: top;
+}
+
+.news-title
+{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.news-title:hover
+{
+    cursor: pointer;
+    color: #48487A;
+}

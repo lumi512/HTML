@@ -1,7 +1,9 @@
 @import url(menu.css);
 @import url(header.css);
 @import url(footer.css);
+@import url(news.css);
 @import url(big-button.css);
+@import url(goods-table2.css);
 
 body
 {
@@ -11,15 +13,15 @@ body
     font-weight: 300;
     font-size: 1.1em;
 
-    margin: 2em;
-    padding-inline: 2em;
-
     background: var(--bg-color);
+    background-image: url(../img/background.png);
+    background-size: cover;
 }
 
 #content
 {
-    padding-inline: 0.75em;
+    margin: 0.5em;
+    padding-inline: 0.4em;
     padding-block: 0.1em;
 
     display: flex;
@@ -68,9 +70,16 @@ aside:hover
 {
     font-size: 1.5em;
     font-weight: 400;
+    margin-block-end: 0.5em;
 }
 
 #aside-content
 {
     font-size: 1.15em;
+}
+
+#aside-content img
+{
+    width: 100%;
+    border-radius: 12px;
 }

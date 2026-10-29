@@ -11,14 +11,18 @@
 
     <body>
         <nav>
-            <p id="nav-title">Tikroviška Parduotuvė.</p>
+            <p id="nav-title">Tikroviška.</p>
             <ul id="nav-menu">
-                <li><a href="pagrindinis.html">Pagrindinis</a></li>
+                <li><a href="index.html">Pagrindinis</a></li>
                 <li><a href="prekes.html">Prekės</a></li>
-                <li><a href="pirkti.html">Pirkti</a></li>
                 <li><a href="kontaktai.html">Kontaktai</a></li>
                 <li><a href="apiemus.html">Apie</a></li>
             </ul>
+
+            <div id="nav-account">
+                <img src="img/header/account.png" alt="Paskyra">
+                <img src="img/header/cart.png" alt="Krepšelis">
+            </div>
         </nav>
 
         <header>
@@ -27,15 +31,27 @@
 
         <div id="content">
             <main>
+                <h1>Kontaktai</h1>
                 <p>
                     Visada laukiame jūsų atsiliepimų.<br>
-                    Prašome užpildyti šią anketą ir pareikšti savo nuomonę apie mūsų parduotuvę ar svetainę.
+                    Prašome pranešti mums savo nuomonę apie mūsų svetainę ir pasakykite, ar yra kokių nors patobulinimų, kuriuos galėtume atlikti. Mielai išgirsime jūsų nuomonę!
                 </p>
                 
                 <form action="kontaktaisiusta.html">
-                    <p>Vardas<b>*</b>: <input type="text" name="firstname" required="required"/></p>
-                    <p>Pavardė<b>*</b>: <input type="text" name="lastname" required="required"/></p>
-                    <p>El. paštas<b>*</b>: <input type="email" required="required"></p>
+                    <p>Vardas<b>*</b>:
+                        <br>
+                        <input type="text" name="firstname" required="required"/>
+                    </p>
+
+                    <p>Pavardė<b>*</b>:
+                        <br>
+                        <input type="text" name="lastname" required="required"/>
+                    </p>
+
+                    <p>El. paštas<b>*</b>:
+                        <br>
+                        <input type="email" required="required">
+                    </p>
 
                     <p>Žinutė<b>*</b>:</p>
                     <textarea rows="8" cols="64" name="message" required="required"></textarea>
@@ -48,21 +64,23 @@
             <aside>
                 <div id="aside-header">Sužinokite daugiau apie šios dienos naujiena!</div>
                 <div id="aside-content">
+                    <img src="img/banana.png">
                     <p>
-                        Mes ką tik atidarėme mūsų visiškai naują svetainę!<br>
-                        <br>
-                        Prašome pranešti mums savo nuomonę apie mūsų svetainę ir pasakykite, ar yra kokių nors patobulinimų, kuriuos galėtume atlikti. Mielai išgirsime jūsų nuomonę!<br>
+                        <b>Nauja prekė: Bananai "Tango"</b><br>
+                        Tik <i>0.99&euro;</i>!<br>
                         <br>
                         Jei norite peržiūrėti mūsų katalogą, spustelėkite <a href="prekes.html">čia</a>.<br>
-                        <br>
-                        Jei norite sužinoti daugiau apie mūsų verslą, galite peržiūrėti mūsų puslapį <a href="apiemus.html">"Apie Mūsų Parduotuvė"</a>.
                     </p>
                 </div>
             </aside>
         </div>
 
         <footer>
-            <p>&copy; 2026 Lukas Mikalauskas</p>
+            <div id="footer-media">
+                <img src="img/footer/facebook.png" alt="Facebook">
+                <img src="img/footer/youtube.png" alt="YouTube">
+            </div>
+            <p id="footer-copyright">&copy; 2026 Lukas Mikalauskas</p>
         </footer>
     </body>
 </html>

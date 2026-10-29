@@ -2,19 +2,39 @@ footer
 {
     --footer-bg-color: #202020;
     --footer-color: #CDCDCD;
+    --footer-padding: 1.5em;
 
     background: var(--footer-bg-color);
     color: var(--footer-color);
 
-    border: 2px solid var(--footer-bg-color);
-    border-radius: 6px;
+    overflow: hidden;
+    padding-block: 0.35em;
 }
 
-footer p
+#footer-media
+{
+    float: left;
+    cursor: default;
+    padding-block: 1em;
+    padding-inline: var(--footer-padding);
+}
+
+#footer-media img
+{
+    width: 15%;
+    height: auto;
+}
+
+#footer-media img:hover
+{
+    cursor: pointer;
+}
+
+#footer-copyright
 {
     text-align: right;
 
     font-size: 1.15em;
     padding-block: 0.15em;
-    padding-right: 1.5em;
+    padding-right: var(--footer-padding);
 }

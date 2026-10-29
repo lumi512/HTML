@@ -33,7 +33,7 @@
 
 .big-button-wide
 {
-    --big-button-wide-width: 12.5em;
+    --big-button-wide-width: 14.5em;
 
     width: var(--big-button-wide-width);
 }
