@@ -58,3 +58,21 @@
     height: inherit;
     line-height: inherit;
 }
+
+@media screen and (orientation: portrait)
+{
+    .big-button
+    {
+        width: 90%;
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    .big-button
+    {
+        width: 100%;
+        --big-button-height: 2em;
+    }
+}

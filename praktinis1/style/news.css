@@ -30,3 +30,28 @@
     cursor: pointer;
     color: #48487A;
 }
+
+@media screen and (orientation: portrait)
+{
+    .news-content
+    {
+        display: flex;  
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .news-content
+    {
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 350px)
+{
+    .news-content
+    {
+        max-width: 70%;
+    }
+}

@@ -18,6 +18,16 @@ fieldset
     font-weight: var(--form-font-weight);
 }
 
+fieldset legend
+{
+    font-size: 1.5em;
+}
+
+fieldset p
+{
+    font-weight: 100;
+}
+
 fieldset input
 {
     font-family: inherit;
@@ -111,7 +121,71 @@ fieldset input:hover
     cursor: pointer;
 }
 
+.form-input
+{
+    --form-input-font-size: 1.25em;
+
+    display: flex;
+    flex-flow: row;
+
+    margin-block: 0.5em;
+}
+
+.form-input p
+{
+    width: 30%;
+    font-size: var(--form-input-font-size);
+}
+
+.form-input input
+{
+    width: 70%;
+    font-size: var(--form-input-font-size);
+
+    height: 100%;
+    margin-block-start: 1em;
+}
+
+.form-input textarea
+{
+    width: 70%;
+    font-size: var(--form-input-font-size);
+    margin-block-start: 1em;
+}
+
 textarea
 {
     resize: none;
+}
+
+@media screen and (orientation: portrait)
+{
+    textarea
+    {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .form-input
+    {
+        flex-flow: column;
+    }
+
+    .form-input p
+    {
+        width: 50%;
+        margin-block: 0.5em;
+    }
+
+    .form-input input
+    {
+        margin-block-start: 0em;
+    }
+
+    .form-input textarea
+    {
+        margin-block: 0em;
+    }
 }

@@ -83,3 +83,38 @@ aside:hover
     width: 100%;
     border-radius: 12px;
 }
+
+@media screen and (max-width: 1040px)
+{
+    #content
+    {
+        flex-wrap: wrap;
+    }
+
+    body
+    {
+        margin: 0.25em;
+        padding-inline: 0.5em;
+    }
+
+    aside
+    {
+        width: 85%;
+        min-width: 35%;
+        max-width: 50%;
+        height: 80%;
+        min-height: 80%;
+
+        margin: 0em;
+        margin-block: 1em;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    aside
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+}

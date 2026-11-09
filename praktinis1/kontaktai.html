@@ -38,23 +38,25 @@
                 </p>
                 
                 <form action="kontaktaisiusta.html">
-                    <p>Vardas<b>*</b>:
-                        <br>
+                    <div class="form-input">
+                        <p>Vardas<b>*</b>:</p>
                         <input type="text" name="firstname" required="required"/>
-                    </p>
+                    </div>
 
-                    <p>Pavardė<b>*</b>:
-                        <br>
+                    <div class="form-input">
+                        <p>Pavardė<b>*</b>:</p>
                         <input type="text" name="lastname" required="required"/>
-                    </p>
+                    </div>
 
-                    <p>El. paštas<b>*</b>:
-                        <br>
+                    <div class="form-input">
+                        <p>El. paštas<b>*</b>:</p>
                         <input type="email" required="required">
-                    </p>
+                    </div>
 
-                    <p>Žinutė<b>*</b>:</p>
-                    <textarea rows="8" cols="64" name="message" required="required"></textarea>
+                    <div class="form-input">
+                        <p>Žinutė<b>*</b>:</p>
+                        <textarea rows="8" cols="64" name="message" required="required"></textarea>
+                    </div>
                     
                     <p><i><b>*</b> - Privaloma</i></p>
                     <input class="big-button" type="submit" name="send" value="Siųsti"/>

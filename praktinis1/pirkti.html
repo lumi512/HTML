@@ -41,45 +41,43 @@
                     <fieldset>
                         <legend>Asmens duomenys</legend>
 
-                        <p>Vardas<b>*</b>:
-                            <br>
+                        <div class="form-input">
+                            <p>Vardas<b>*</b>:</p>
                             <input type="text" name="firstname" required="required"/>
-                        </p>
+                        </div>
 
-                        <p>Pavardė<b>*</b>:
-                            <br>
+                        <div class="form-input">
+                            <p>Pavardė<b>*</b>:</p>
                             <input type="text" name="lastname" required="required"/>
-                        </p>
+                        </div>
 
-                        <p>Gimimo data<b>*</b>:
-                            <br>
-                            <input type="date" required="required"/>
-                        </p>
+                        <div class="form-input">
+                            <p>Gimimo data<b>*</b>:</p>
+                            <input type="date" required="required">
+                        </div>
 
-                        <p>El. paštas<b>*</b>:
-                            <br>
+                        <div class="form-input">
+                            <p>El. paštas<b>*</b>:</p>
                             <input type="email" required="required">
-                        </p>
+                        </div>
 
-                        <p>Telefono nr.<b>*</b>:
-                            <br>
-                            <input type="text" required="required"/>
-                        </p>
+                        <div class="form-input">
+                            <p>Telefono nr.<b>*</b>:</p>
+                            <input type="text" required="required">
+                        </div>
 
-                        <p>Adresas<b>*</b>:
-                            <br>
-                            <input type="text" required="required"/>
-                        </p>
+                        <div class="form-input">
+                            <p>Adresas<b>*</b>:</p>
+                            <input type="text" required="required">
+                        </div>
                     </fieldset>
 
-                    <br>
                     <div class="form-radio">
                         Pristatymo būdas<b>*</b>:<br>
                         <div class="form-radio-input"><input type="radio" required="required" name="delivery" value="adreso"/>Adreso siuntimas<br></div>
                         <div class="form-radio-input"><input type="radio" required="required" name="delivery" value="paštomatas"/>Paštomatas</div>
                     </div>
 
-                    <br>
                     <div class="form-checkbox">
                         <input type="checkbox" value="getpromotions" checked="checked"/>
                         Gauti pranešimus apie naujoves mūsų parduotuvėje

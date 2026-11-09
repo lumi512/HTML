@@ -33,6 +33,7 @@ nav
     display: inline-block;
 
     padding: 0.3em;
+    padding-block: 0.35em;
     margin-inline: 0.65em;
 }
 
@@ -72,4 +73,57 @@ nav
 #nav-account img:hover
 {
     cursor: pointer;
+}
+
+@media screen and (max-width: 700px)
+{
+    #nav-menu li
+    {
+        margin-inline-end: 0.1em;
+    }
+}
+
+@media screen and (orientation: portrait)
+{
+    nav
+    {
+        padding-inline: 0em;
+        padding-block: 0em;
+    }
+
+    #nav-title
+    {
+        float: none;
+    }
+
+    #nav-menu
+    {
+        --menu-bg-color: #D4E4F4;
+
+        background: var(--menu-bg-color);
+
+        float: none;
+        margin-inline: 0em;
+    }
+
+    #nav-menu li
+    {
+        display: flex;
+        margin-right: 2.75em;
+
+        border: 1px solid var(--menu-border-color);
+        border-top-style: none;
+        border-inline-style: none;
+    }
+
+    #nav-menu a
+    {
+        margin-inline: auto;
+        border: none;
+    }
+
+    #nav-account
+    {
+        float: none;
+    }
 }

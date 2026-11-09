@@ -19,6 +19,9 @@
 
     max-width: var(--goods-item-width);
     max-height: auto;
+
+    min-width: 192px;
+    max-width: 384px;
 }
 
 .goods-item-img img
@@ -30,7 +33,7 @@
 .goods-item-desc
 {
     text-align: left;
-    vertical-align: top;
+    vertical-align: middle;
 
     padding-inline: 2em;
     width: 70%;
@@ -43,6 +46,8 @@
 {
     font-size: 1.5em;
     font-weight: 400;
+
+    margin-block: 0em;
 }
 
 .goods-item-desc-price
@@ -53,4 +58,57 @@
 .goods-item-desc:hover
 {
     background: var(--goods-table-row-hover-color);
+}
+
+@media screen and (orientation: portrait)
+{
+    .goods-table
+    {
+        background: none;
+    }
+
+    .goods-table tr
+    {
+        background: none;
+    }
+
+    .goods-item-img
+    {
+        min-width: 30%;
+    }
+
+    .goods-item-img img
+    {
+        border-radius: 6px;
+    }
+
+    .goods-item-desc
+    {
+        width: 50%;
+        padding-inline: 1em;
+    }
+
+    .goods-item-desc-name
+    {
+        font-size: 1.25em;
+    }
+
+    .goods-item-desc-price
+    {
+        font-size: 1em;
+        margin-block: 0.5em;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .goods-item-desc-name
+    {
+        font-size: 1em;
+    }
+
+    .goods-item-desc-price
+    {
+        font-size: 0.85em;
+    }
 }
