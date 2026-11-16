@@ -121,6 +121,11 @@ fieldset input:hover
     cursor: pointer;
 }
 
+.form-button
+{
+    padding-block-start: 0em;
+}
+
 .form-input
 {
     --form-input-font-size: 1.25em;

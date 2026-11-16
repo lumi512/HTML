@@ -38,3 +38,33 @@ footer
     padding-block: 0.15em;
     padding-right: var(--footer-padding);
 }
+
+@media screen and (orientation: portrait)
+{
+    #footer-media
+    {
+        text-align: center;
+        float: none;
+
+        padding-block-end: 0em;
+    }
+
+    #footer-media img
+    {
+        width: 10%;
+    }
+
+    #footer-copyright
+    {
+        text-align: center;
+        padding-right: 0em;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    #footer-media img
+    {
+        width: 15%;
+    }
+}

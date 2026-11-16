@@ -1,36 +1,36 @@
-.goods-table
+.product-table
 {
-    --goods-table-bg-color: #DCDCFB;
-    --goods-table-row-color: #EBEBEA;
-    --goods-table-row-hover-color: #EDEDF4;
+    --product-table-bg-color: #DCDCFB;
+    --product-table-row-color: #EBEBEA;
+    --product-table-row-hover-color: #EDEDF4;
 
-    background: var(--goods-table-bg-color);
+    background: var(--product-table-bg-color);
     width: 100%;
 }
 
-.goods-table tr
+.product-table tr
 {
-    background: var(--goods-table-row-color);
+    background: var(--product-table-row-color);
 }
 
-.goods-item-img
+.product-item-img
 {
-    --goods-item-width: 100%;
+    --product-item-width: 100%;
 
-    max-width: var(--goods-item-width);
+    max-width: var(--product-item-width);
     max-height: auto;
 
     min-width: 192px;
     max-width: 384px;
 }
 
-.goods-item-img img
+.product-item-img img
 {
-    width: var(--goods-item-width);
+    width: var(--product-item-width);
     height: auto;
 }
 
-.goods-item-desc
+.product-item-desc
 {
     text-align: left;
     vertical-align: middle;
@@ -42,7 +42,7 @@
     user-select: none;
 }
 
-.goods-item-desc-name
+.product-item-desc-name
 {
     font-size: 1.5em;
     font-weight: 400;
@@ -50,50 +50,51 @@
     margin-block: 0em;
 }
 
-.goods-item-desc-price
+.product-item-desc-price
 {
     font-size: 1.25em;
 }
 
-.goods-item-desc:hover
+.product-item-desc:hover
 {
-    background: var(--goods-table-row-hover-color);
+    background: var(--product-table-row-hover-color);
 }
 
 @media screen and (orientation: portrait)
 {
-    .goods-table
+    .product-table
     {
         background: none;
     }
 
-    .goods-table tr
+    .product-table tr
     {
         background: none;
     }
 
-    .goods-item-img
+    .product-item-img
     {
         min-width: 30%;
     }
 
-    .goods-item-img img
+    .product-item-img img
     {
         border-radius: 6px;
     }
 
-    .goods-item-desc
+    .product-item-desc
     {
         width: 50%;
         padding-inline: 1em;
+        border-radius: 6px;
     }
 
-    .goods-item-desc-name
+    .product-item-desc-name
     {
         font-size: 1.25em;
     }
 
-    .goods-item-desc-price
+    .product-item-desc-price
     {
         font-size: 1em;
         margin-block: 0.5em;
@@ -102,12 +103,12 @@
 
 @media screen and (max-width: 480px)
 {
-    .goods-item-desc-name
+    .product-item-desc-name
     {
         font-size: 1em;
     }
 
-    .goods-item-desc-price
+    .product-item-desc-price
     {
         font-size: 0.85em;
     }
