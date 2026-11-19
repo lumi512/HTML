@@ -1,8 +1,14 @@
 .product-table
 {
     --product-table-bg-color: #DCDCFB;
+
     --product-table-row-color: #EBEBEA;
-    --product-table-row-hover-color: #EDEDF4;
+    --product-table-row-color2: #CBDBFA;
+    --product-table-row-gradient: linear-gradient(180deg, var(--product-table-row-color), var(--product-table-row-color2) 160%);
+
+    --product-table-desc-color: #EDEDF4;
+    --product-table-desc-color2: #ABECFE;
+    --product-table-desc-gradient: linear-gradient(180deg, var(--product-table-desc-color), var(--product-table-desc-color2) 160%);
 
     background: var(--product-table-bg-color);
     width: 100%;
@@ -10,7 +16,7 @@
 
 .product-table tr
 {
-    background: var(--product-table-row-color);
+    background: var(--product-table-row-gradient);
 }
 
 .product-item-img
@@ -57,7 +63,7 @@
 
 .product-item-desc:hover
 {
-    background: var(--product-table-row-hover-color);
+    background: var(--product-table-desc-gradient);
 }
 
 @media screen and (orientation: portrait)

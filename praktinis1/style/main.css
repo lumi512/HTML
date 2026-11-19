@@ -37,15 +37,15 @@ main
 
 aside
 {
-    --aside-bg-color: #c9c0c0;
-    --aside-bg-hover-color: #cec5c5;
+    --aside-bg-color: #cec2c2;
+    --aside-bg-color2: #ded6d6;
+    --aside-bg-gradient: linear-gradient(180deg, var(--aside-bg-color), var(--aside-bg-color2) 75%);
     --aside-font-color: #4A404A;
-    --aside-font-hover-color: #202020;
 
     --aside-width: 20em;
     --aside-height: 35em;
 
-    background: var(--aside-bg-color);
+    background: var(--aside-bg-gradient);
     color: var(--aside-font-color);
 
     width: var(--aside-width);
@@ -63,9 +63,11 @@ aside
 
 aside:hover
 {
-    background: var(--aside-bg-hover-color);
-    border-color: var(--aside-bg-hover-color);
-    color: var(--aside-font-hover-color);
+    --aside-bg-color: #cec5c5;
+    --aside-bg-color2: #dfdada;
+    --aside-bg-gradient: linear-gradient(180deg, var(--aside-bg-color), var(--aside-bg-color2) 75%);
+
+    --aside-font-color: #202020;
 }
 
 #aside-header

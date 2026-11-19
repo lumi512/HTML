@@ -1,22 +1,32 @@
 .news-section
 {
     --news-bg-color: #ECECFB;
+    --news-bg-color2: #D7D7EA;
+    --news-bg-gradient: linear-gradient(180deg, var(--news-bg-color), var(--news-bg-color2) 90%);
+
     --news-border-color: #DBDBEA;
+    --news-border-radius: 6px;
 
-    background: var(--news-bg-color);
     min-height: 6em;
-
     margin-block-end: 1em;
 }
 
 .news-content
 {
+    background: var(--news-bg-gradient);
     border: 2px solid var(--news-border-color);
+    border-radius: var(--news-border-radius);
 
     padding-inline: 2em;
     padding-block: 1em;
 
     vertical-align: top;
+}
+
+.news-content:hover
+{
+    --news-bg-color: #F2F2FF;
+    --news-bg-gradient: linear-gradient(180deg, var(--news-bg-color), var(--news-bg-color2) 90%);
 }
 
 .news-title

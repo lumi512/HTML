@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pavyzdys</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="form-group">
+  <label for="password">Slaptažodis:</label>
+  <input type="password" id="password" />
+  <div id="err-password" style="display: none"></div>
+</div>
+<input type="button" value="Registruotis" onclick="displayError()" />
+<script>
+ function displayError() {
+  var elem = document.getElementById('err-password');
+  elem.setAttribute('role', 'alert');
+  elem.style = '';
+  elem.innerText = 'Per trumpas slaptažodis.';
+ }
+</script>
+    </body>
+</html>
